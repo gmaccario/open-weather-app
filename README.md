@@ -7,7 +7,7 @@ Open Weather App consumes Open Weather Map APIs in order to show the current wea
 
 ### Installation
 ```
-git clone https://github.com/gmaccario/open_weather_app.git open-weather-app
+git clone https://github.com/gmaccario/open-weather-app.git open-weather-app
 cd open-weather-app
 docker-compose up -d
 docker exec -it weather-app-php /bin/bash
