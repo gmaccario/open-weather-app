@@ -17,7 +17,7 @@
 $router->get('/', function() use ($router) {
     return view('weather', [
       'app_version' => $router->app->version(),
-      'app_id_exists' => ((!empty(env('OPEN_WEATHER_APP_ID')) && env('OPEN_WEATHER_APP_ID') != '<YOUR-APP-ID>') ? true : false),
+      'app_id_exists' => ((!empty(env('OPEN_WEATHER_APP_ID')) && env('OPEN_WEATHER_APP_ID') != 'YOUR-APP-ID') ? true : false),
     ]);
 });
 
