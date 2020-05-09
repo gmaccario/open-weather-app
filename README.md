@@ -17,7 +17,6 @@ composer install
 ### Get your app id
 Open https://openweathermap.org/appid and get you APPID. Then:
 ```
-cd app
 cp .env.example .env
 ```
 Edit .env and replace <YOUR-APP-ID> with your Open Weather Map app id.
