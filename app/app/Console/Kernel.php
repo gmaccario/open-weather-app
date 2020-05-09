@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //
+        'App\Console\Commands\SaveCurrentWeatherCommand'
     ];
 
     /**
@@ -24,6 +25,6 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        //
+        //$schedule->command('delete:posts')->weekly()->mondays()->at('9:00');
     }
 }
