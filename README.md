@@ -19,7 +19,7 @@ Open https://openweathermap.org/appid and get you APPID. Then:
 ```
 cp .env.example .env
 ```
-Edit .env and replace <YOUR-APP-ID> with your Open Weather Map app id.
+Edit .env and replace YOUR-APP-ID with your Open Weather Map app id.
 
 Open http://localhost on your browser.
 
