@@ -11,6 +11,8 @@ Open Weather App consumes Open Weather Map APIs in order to show the current wea
 git clone https://github.com/gmaccario/open_weather_app.git open-weather-app
 cd open-weather-app
 docker-compose up -d
+docker exec -it weather-app-php /bin/bash
+composer install
 ```
 
 ### Get your app id
@@ -19,7 +21,7 @@ Open https://openweathermap.org/appid and get you APPID. Then:
 cd app
 cp .env.example .env
 ```
-Edit .env and add you openweathermap APPID.
+Edit .env and add replace <YOUR-APP-ID> with your Open Weather Map app id.
 
 Open http://localhost on your browser.
 
