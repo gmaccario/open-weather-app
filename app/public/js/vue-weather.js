@@ -87,6 +87,11 @@ const Forecast = Vue.component('w-forecast',{
 
 							this.items.push(item);
 						}
+
+						if(dt > timeLimitEnd)
+						{
+							break;
+						}
 					}
 			});
     }
