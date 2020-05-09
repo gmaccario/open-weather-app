@@ -97,7 +97,7 @@ const Forecast = Vue.component('w-forecast',{
 			<div class="col" v-for="item in items" :key="item.dt">
 				<span>{{ item.dt }}</span>
 				<span>{{ item.weather[0].main }}</span>
-				<img :src="'http://openweathermap.org/img/wn/' + item.weather[0].icon + '.png'" />
+				<img :src="'http://openweathermap.org/img/wn/' + item.weather[0].icon + '.png'" :alt="item.weather[0].main"/>
 			</div>
 		</div>
 	</div>`
@@ -196,7 +196,7 @@ const Condition = Vue.component('w-condition',{
 			<div class="col">
 				<div class="span4"></div>
 				<div class="span4">
-					<img class="center-block" :src="'http://openweathermap.org/img/wn/' + condition_icon + '@2x.png'" />
+					<img class="center-block" :src="'http://openweathermap.org/img/wn/' + condition_icon + '@2x.png'" :alt="condition"/>
 					<div class="condition">
 						<span>{{ condition }}</span>
 					</div>
