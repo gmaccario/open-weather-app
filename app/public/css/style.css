@@ -1,0 +1,34 @@
+h1{color:red;}
+
+/* Open Weather Widget */
+#weather-wrapper .weather {
+  border: 1px solid #cccccc;
+  border-radius: 1em;
+  padding-bottom: 1em;
+}
+
+#weather-wrapper .weather-condition {
+  padding: 1em;
+}
+
+#weather-wrapper .weather-condition .city {
+  padding: 1em;
+}
+#weather-wrapper .weather-condition .city span {
+  font-weight: bold;
+}
+
+#weather-wrapper .weather-condition .currentDate,
+#weather-wrapper .weather-condition .temperature {
+  padding-left: 1em;
+}
+
+#weather-wrapper .weather-condition .condition {
+  text-align: center;
+}
+
+#weather-wrapper img.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

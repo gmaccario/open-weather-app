@@ -1,0 +1,47 @@
+# Original: https://github.com/stevenliebregt/docker-compose-lemp-stack
+version: '3'
+services:
+    php:
+        build:
+            context: ./docker
+            dockerfile: php.Dockerfile
+        container_name: ${APP_NAME:?err}-php
+        volumes:
+            - ./app:/var/www/html
+
+    nginx:
+        image: 'nginx:1.13.6'
+        container_name: ${APP_NAME:?err}-nginx
+        ports:
+            - '80:80'
+            - '443:443'
+        links:
+            - 'php'
+        volumes:
+            - ./app:/var/www/html
+            - ./config/nginx:/etc/nginx/conf.d
+
+    mariadb:
+        image: mariadb:latest
+        container_name: mariadb
+        ports:
+          - "3308:3306"
+        volumes:
+          - ./data/mariadb:/var/lib/mariadb
+        environment:
+          MYSQL_ROOT_PASSWORD: tiger
+          MYSQL_USER: lemp
+          MYSQL_PASSWORD: lemp
+          MYSQL_DATABASE: lemp
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        container_name: phpmyadmin
+        ports:
+          - "1234:80"
+        links:
+          - mariadb
+        environment:
+          PMA_HOST: mariadb
+        depends_on:
+          - mariadb
