@@ -25,6 +25,7 @@ Open http://localhost on your browser.
 
 ### Todo
 * Add fontawesome
+* Save history
 
 ### Notes
 api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={your api key}
