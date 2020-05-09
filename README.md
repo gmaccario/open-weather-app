@@ -27,6 +27,16 @@ Open http://localhost on your browser.
 * Add fontawesome
 * Save history
 
+## Valid HTML
+https://validator.w3.org/
+Document checking completed. No errors or warnings to show.
+
+## Author
+Giuseppe Maccario
+
+## Author URI
+[https://www.giuseppemaccario.com](https://www.giuseppemaccario.com "Giuseppe Maccario")
+
 ### Notes
 api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={your api key}
 api.openweathermap.org/data/2.5/forecast?lat=52.3728583&lon=4.938827799999999&appid=<app-id>
