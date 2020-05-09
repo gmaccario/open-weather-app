@@ -1,7 +1,6 @@
 # Open Weather App (dockerized)
 
-## Lumen (7.1.1) (Laravel Components ^7.0)
-### Vue.js v2.6.11
+## Based on Open Weather APIs and built with Lumen (7.1.1) and Vue.js v2.6.11
 
 ### Description
 Open Weather App consumes Open Weather Map APIs in order to show the current weather condition and the forecast (today and tomorrow) based on the device geolocation. You must enable your device geolocation to allow the script make a request for the right position.
@@ -21,7 +20,7 @@ Open https://openweathermap.org/appid and get you APPID. Then:
 cd app
 cp .env.example .env
 ```
-Edit .env and add replace <YOUR-APP-ID> with your Open Weather Map app id.
+Edit .env and replace <YOUR-APP-ID> with your Open Weather Map app id.
 
 Open http://localhost on your browser.
 
@@ -29,21 +28,24 @@ Open http://localhost on your browser.
 * Add fontawesome
 * Save history
 
-## Valid HTML
+### Valid HTML
 https://validator.w3.org/
 Document checking completed. No errors or warnings to show.
 
-## Author
+### Author
 Giuseppe Maccario
 
-## Author URI
+### Author URI
 [https://www.giuseppemaccario.com](https://www.giuseppemaccario.com "Giuseppe Maccario")
 
-### Notes
-api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={your api key}
-api.openweathermap.org/data/2.5/forecast?lat=52.3728583&lon=4.938827799999999&appid=<app-id>
-https:openweathermap.org/price
-https:maps.owm.io/map/wind_new/13/52.3728583/4.938827799999999&.png?appid=<app-id>
+### Screenshot
+![Alt text](screenshot.png "Open Weather App")
 
-https://www.php.net/manual/en/features.http-auth.php
-https://stackoverflow.com/questions/3323245/is-basic-access-authentication-secure
+### Notes
+* api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={your api key}
+* api.openweathermap.org/data/2.5/forecast?lat=52.3728583&lon=4.938827799999999&appid=<app-id>
+* https:openweathermap.org/price
+* https:maps.owm.io/map/wind_new/13/52.3728583/4.938827799999999&.png?appid=<app-id>
+
+* https://www.php.net/manual/en/features.http-auth.php
+* https://stackoverflow.com/questions/3323245/is-basic-access-authentication-secure
